@@ -1,0 +1,134 @@
+/*!
+ * ActivePresenter HTML5 Output File
+ * Copyright (c) Atomi Systems, Inc. All rights reserved.
+ * https://atomisystems.com/activepresenter/
+ * Version: 8.2.3
+ * Date: 2020.11.25
+ */
+#h9Db0tI4 .ap-focused {
+	outline: 1px dashed black;
+	outline-offset: 1px;
+}
+#h9Db0tI4 p {
+	margin: 0;
+}
+#h9Db0tI4 ol,ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#h9Db0tI4 {
+	-webkit-tap-highlight-color: transparent;
+}
+@font-face{
+    font-family: 'Baloo Bhai';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Baloo Bhai'),
+         url('resources/font_0.woff');
+}
+@font-face{
+    font-family: 'Bookman Old Style';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Bookman Old Style Bold'),
+         url('resources/font_1.woff');
+}
+@font-face{
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bungee'),
+         url('resources/font_2.woff');
+}
+@font-face{
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Bungee Bold'),
+         url('resources/font_3.woff');
+}
+@font-face{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Georgia'),
+         url('resources/font_4.woff');
+}
+@font-face{
+    font-family: 'Lucida Handwriting';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lucida Handwriting Bold'),
+         url('resources/font_5.woff');
+}
+@font-face{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Tahoma'),
+         url('resources/font_6.woff');
+}
+
+
+
+
+/* Animation */
+@-webkit-keyframes 
+pulsate {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0.8;
+	}
+	45% {
+		-webkit-transform: scale(1.75);
+		transform: scale(1.75);
+		opacity: 0;
+	}
+}
+@keyframes 
+pulsate {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0.8;
+	}
+	45% {
+		-webkit-transform: scale(1.75);
+		transform: scale(1.75);
+		opacity: 0;
+	}
+}
+
+.ap-hotspot {
+	position: absolute;
+	transition: all .3s ease;
+	cursor: pointer;
+}
+
+.ap-hotspot .hs-circle {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border-radius: 50%;
+	transform-origin: 50% 50%;
+}
+
+.ap-hotspot .hs-ring {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	border-radius: 50%;
+	margin: -1px auto auto -1px;
+	border: 1px solid;
+	-webkit-animation: pulsate 3s ease-out infinite;
+	animation: pulsate 3s ease-out infinite;
+	opacity: 0;
+}
+
+.ap-hotspot .hs-ring:hover {
+	animation: none;
+}
